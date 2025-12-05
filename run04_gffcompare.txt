@@ -1,0 +1,3 @@
+#GFFcompare
+#run in your ubuntu terminal
+gffcompare -r your_path/reference_genome.gtf  -G your_path/stringtie_merged.gtf 
