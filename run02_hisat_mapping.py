@@ -1,7 +1,7 @@
 ### Mapping  
 ### Input files (previously trimmed by run01_fastp_trimming.py) must be listed in two columns separate by a tab \t, similar to list_of_data.txt: ../{filename}sample1_paired1.fq.gz   ../{filename}sample1_paired2.fq.gz
 ### An index was previously constructed in ubuntu terminal running: hisat2-build ../{filename_reference_genome.fasta} index_output
-### CReate a directory mkdir 02_mapping, and then run inside this script in the ubuntu terminal as: python3 run02_hisat_mapping.py list_trimmed_file.txt 
+
 
 #!/usr/bin/env python
 # coding: utf-8
@@ -14,7 +14,7 @@ from pathlib import Path
 list_of_data = sys.argv[1]
 
 #NOTE: indicate the path to your index directory, not to the files. 
-index = "your_path/index"  
+index = "your_path/index_output"  
 
 out_directory = "./02_mapping"
 summary_dir = os.path.join(out_directory, "summary")
