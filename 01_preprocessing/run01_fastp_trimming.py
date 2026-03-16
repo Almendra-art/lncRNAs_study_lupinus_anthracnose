@@ -1,6 +1,6 @@
 ### NOTE1: before running, the sequencing data must be downloaded
 ### NOTE2: input files and their paths needs previously listed in two columns separate by a tab \t, similar to list_file.txt: your_path/{filename}sample1_1.fastq.gz	    your_path/sample1_2.fastq.gz
-### then run this script in ubuntu terminal as: python3 run01_fastp_trimming.py list_file.txt
+### then run this script in ubuntu terminal as: python3 run01_fastp_trimming.py list_file.tsv
 ### NOTE4: our dataset was sequenced with umis, subsequently, umis were removed in this step
 
 #!/usr/bin/env python
