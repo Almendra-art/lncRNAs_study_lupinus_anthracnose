@@ -1,6 +1,5 @@
-#Script to generate tables.csv with pairs connections previous filtered by a quantil, to and relate with a treatment
-#In this step you will have files with significant gene connections related to each treatment 
-#This information could be useful as an atribute of edges in the final network
+###NOTE1: This step is for generate files with significant gene connections (pairs) related to each treatment 
+###NOTE2: This information could be useful as an atribute of edges for cytoscape
 
 import pandas as pd
 
