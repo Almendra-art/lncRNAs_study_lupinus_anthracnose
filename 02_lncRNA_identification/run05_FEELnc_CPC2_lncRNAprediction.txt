@@ -1,19 +1,19 @@
-#LncRNA prediction was performed direct on ubuntu terminal with the following lines:
+###LncRNA prediction was performed direct on ubuntu terminal with the following lines:
 
-#First: FEELnc Filter module 
+###First: FEELnc Filter module 
 
 FEELnc_filter.pl -i your_path/stringtie_merged.gtf -b transcript_biotype=protein_coding -a your_path/reference_genome.gtf > candidate_lncRNA_FEELnc.gtf
 
-#Second: FEELnc Coding potential calculator module 
+###Second: FEELnc Coding potential calculator module 
 
 FEELnc_codpot.pl -i your_path/candidate_lncRNA.gtf -a your_path/reference_genome.gtf -g your_path/reference_genome.fasta --mode=shuffle
 
-#Third: FEELnc Classifier module
+###Third: FEELnc Classifier module
 
 FEELnc_classifier.pl -i your_path/candidate_lncRNA.gtf -a your_path/reference_genome.gtf  > lncRNA_classes_FEELnc.txt
 
-#CPC2 lncRNA prediction 
-#Previously from stringtie_merged.gtf was created a stringtie_merged.fasta file
+###CPC2 lncRNA prediction 
+###Previously from stringtie_merged.gtf was created a stringtie_merged.fasta file
 
 python2 bin/CPC2.py -i your_path/stringtie_merged.fasta -o candidate_lncRNA_CPC2 
 
