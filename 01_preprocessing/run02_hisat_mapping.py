@@ -1,6 +1,6 @@
 ### Mapping  
-### Input files (previously trimmed by run01_fastp_trimming.py) must be listed in two columns separate by a tab \t
-### An index was previously constructed in ubuntu terminal running: hisat2-build ../{filename_reference_genome.fasta} index_output
+### NOTE1: Input files (previously trimmed by run01_fastp_trimming.py) must be listed in two columns separate by a tab \t
+### NOTE2: An index was previously constructed in ubuntu terminal running: hisat2-build ../{filename_reference_genome.fasta} index_output
 
 
 #!/usr/bin/env python
