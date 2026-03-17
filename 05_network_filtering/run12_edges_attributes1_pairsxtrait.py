@@ -1,5 +1,5 @@
 ###NOTE1: This step is for generate files with significant gene connections (pairs) related to each treatment 
-###NOTE2: This information could be useful as an atribute of edges for cytoscape
+###NOTE2: This information could be useful as an attribute of edges for cytoscape
 
 import pandas as pd
 
