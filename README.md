@@ -12,7 +12,7 @@ protein-coding genes by integrating:
 -   Co-expression network analysis (WGCNA)
   
 
-![Pipeline diagram](docs/pipeline.png)
+![Pipeline diagram](docs/esquema_solo.png)
 ------------------------------------------------------------------------
 
 ## Repository Structure
