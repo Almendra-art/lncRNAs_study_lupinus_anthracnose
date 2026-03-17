@@ -1,5 +1,4 @@
-#Script to generate networks.csv files that you can load in cytoscape
-#Choose your desire quantil
+###Choose your desire quantil
 
 import pandas as pd
 
