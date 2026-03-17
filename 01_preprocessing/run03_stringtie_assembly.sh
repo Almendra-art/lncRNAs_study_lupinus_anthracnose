@@ -1,4 +1,5 @@
-### NOTE1: run this script in your ubuntu terminal as: bash run03_stringtie_assembly.sh
+###Assembly 
+###NOTE1: run this script in your ubuntu terminal as: bash run03_stringtie_assembly.sh
 
 #!/bin/bash
 mkdir -p 03_stringtie
