@@ -1,5 +1,5 @@
 ### Mapping  
-### Input files (previously trimmed by run01_fastp_trimming.py) must be listed in two columns separate by a tab \t, similar to list_of_data.txt: ../{filename}sample1_paired1.fq.gz   ../{filename}sample1_paired2.fq.gz
+### Input files (previously trimmed by run01_fastp_trimming.py) must be listed in two columns separate by a tab \t
 ### An index was previously constructed in ubuntu terminal running: hisat2-build ../{filename_reference_genome.fasta} index_output
 
 
