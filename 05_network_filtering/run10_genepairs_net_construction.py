@@ -1,4 +1,4 @@
-#Note1: Before run, DELETE HEADERS of your gene list file generated in run09_coexp_data_filter.ipynb, to avoid generate gene pairs with headers
+###Note1: Before run, DELETE HEADERS of your gene list file generated in run09_coexp_data_filter.ipynb, to avoid generate gene pairs with headers
 
 
 def generate_gene_pairs(input_file, output_file):
