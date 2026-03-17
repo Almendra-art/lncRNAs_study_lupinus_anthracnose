@@ -10,7 +10,10 @@ protein-coding genes by integrating:
     in results
 -   Two differential expression analysis tools (DESeq2 and edgeR)
 -   Co-expression network analysis (WGCNA)
-
+  
+<p align="center">
+  <img src="docs/pipeline.png" width="700">
+</p>
 ------------------------------------------------------------------------
 
 ## Repository Structure
