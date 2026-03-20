@@ -79,6 +79,5 @@
 
 **Input:** - `annotation_file.tsv ` - `list_nodes.txt` - `list_edges.txt`
 
-**Output:** - `annotated_genes.tsv`
- `annotated_genes.tsv`
+**Output:** - `annotated_genes.tsv`'`annotated_genes.tsv`
 
