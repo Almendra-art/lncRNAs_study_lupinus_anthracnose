@@ -16,8 +16,9 @@ Where:
 
 **Output:** 
 - Network files and plots
-- Tables with relationships between modules and traits: ModuleTraitCorrelation.tsv, genes and modules: geneModuleMembership.csv, PvalueModuleMembership.csv
-- Tables with relationships between genes and traits: geneTraitSignificance_resistant.csv and GeneSignificancePvalue_resistant.csv
+- Tables with relationships among modules and traits: ModuleTraitCorrelation.tsv
+- Tables with relationships among genes and modules: geneModuleMembership.csv, PvalueModuleMembership.csv
+- Tables with relationships among genes and traits: geneTraitSignificance_resistant.csv and GeneSignificancePvalue_resistant.csv
 - BigNet output: bigNet_edges.txt and bigNet_nodes.txt files, is the necessary information of relationships between all genes.  
 
 
