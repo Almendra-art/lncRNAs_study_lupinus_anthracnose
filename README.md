@@ -191,12 +191,12 @@ Build index:
 
 ## Software and tools 
 
-R v4.5.1.
-Python v3.10.
-FastQC v0.11.9 [1]
-MultiQC v.1.23 [2]
-Fastp v0.23.2 [3]
-Hisat2 v2.2.165 [4]
+- R v4.5.1.
+- Python v3.10.
+- FastQC v0.11.9 [1]
+- MultiQC v.1.23 [2]
+- Fastp v0.23.2 [3]
+- Hisat2 v2.2.165 [4]
 Stringtie v2.2.2 [5]
 Gffcompare v0.11.2 [6]
 CPC2 v1.0.1 [7] 
