@@ -97,7 +97,7 @@ Build index:
 
 **Input:** - `ref_genome.gtf` - `stringtie_merged.gtf`
 
-**Output:** - Common lncRNAs
+**Output:** - candidate lncRNAs
 
 ------------------------------------------------------------------------
 
