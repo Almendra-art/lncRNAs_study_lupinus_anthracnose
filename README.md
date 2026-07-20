@@ -2,12 +2,9 @@
 
 ## Overview
 
-This repository provides a complete computational framework to identify
-lncRNAs and putative regulatory interactions between lncRNAs and
-protein-coding genes by integrating:
+This repository contains the computational workflow and analysis scripts used to identify candidate lncRNAs and infer putative regulatory interactions between lncRNAs and protein-coding genes by integrating:
 
--   Two lncRNA prediction tools (FEELnc and CPC2) to increase confidence
-    in results
+-   Two lncRNA prediction tools (FEELnc and CPC2) and filtering steps.
 -   Two differential expression analysis tools (DESeq2 and edgeR)
 -   Co-expression network analysis (WGCNA)
   
@@ -38,6 +35,8 @@ protein-coding genes by integrating:
     │   ├── run13_edges_attributes2_to_cytoscape.ipynb
     │   ├── run14_nodes_attributes_to_cytoscape.ipynb
     │   └── run15_annotation_nodes_of_interest.ipynb
+    ├── 06_regulatory_prediction/
+    │   ├── run16_regulatory_prediction.txt
     └── README.md
 
 **Note:** The modules must be executed in order.
@@ -194,6 +193,17 @@ Build index:
 **Output:** - `annotated_genes.tsv`
 
 ------------------------------------------------------------------------
+
+### Step 06 - Regulation mechanisms prediction
+
+#### `run16_regulatory_prediction.txt`
+
+
+**Input:** - `lncRNA.fasta` - `protein-coding-genes.fasta` - `miRNAs.fasta` 
+**Output:** - `lncRNA results, RNAplex, psRNAtarget output`
+
+------------------------------------------------------------------------
+
 
 ## Software and tools 
 
