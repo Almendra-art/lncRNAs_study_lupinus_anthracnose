@@ -20,6 +20,6 @@ Example metadata.txt:
 sample  hpi genotype    biosample   response    tissue  treatment 
 C195_60H_1  060HPI  C195    R1  Susceptible hypocotyl   C195_060HPI
 
-**Output:** - normalized count_matrix.tsv, DE genes, PCA, heatmaps
+**Output:** - normalized count_matrix.tsv, DE genes: contrast 1 infection-associated and contrast 2 genotype-associated, PCA, heatmaps
 
 ------------------------------------------------------------------------
