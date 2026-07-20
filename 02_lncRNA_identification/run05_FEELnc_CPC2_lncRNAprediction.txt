@@ -18,5 +18,90 @@ FEELnc_classifier.pl -i your_path/candidate_lncRNA.gtf -a your_path/reference_ge
 python2 bin/CPC2.py -i your_path/stringtie_merged.fasta -o candidate_lncRNA_CPC2 
 
 
+###lncRNAs predicted in common by both tools were filtered as follows:
+###Rfam to remove structural RNAs:
+RFAM: 
+ INFERNAL 1.1.3 (Nov 2019)
+
+ cat run_rfam_filter.sh
+cmscan \
+--cut_ga \
+--rfam \
+--nohmmonly \
+--clanin Rfam.clanin \
+--fmt 2 \
+--tblout rfam.tblout \
+-Z 17.6 \
+Rfam.cm \
+final_lncRNAs.fasta \
+> rfam_cmscan_output.txt
+
+# Z: (residues: 8807126) x 2 / 1.000.000
+
+#remove_rfam.sh
+#!/bin/bash
+
+awk '
+!/^#/ {
+    family=$2
+
+    if (family ~ /^SSU_rRNA/ ||
+        family ~ /^LSU_rRNA/ ||
+        family == "5_8S_rRNA" ||
+        family == "tRNA" ||
+        family == "U2" ||
+        family == "U3" ||
+        family == "U6" ||
+        family == "Plant_U3" ||
+        family ~ /^snoR/ ||
+        family ~ /^snoZ/ ||
+        family ~ /^SNOR/ ||
+        family ~ /_SRP$/ )
+    {
+        print $4
+    }
+}
+' rfam.tblout | sort -u > remove_lncRNAs_rfam.txt
+
+#UTR filtering: 
+
+#location of transcripts lncRNAs:
+grep -F -f final_lncRNA.txt stringtie_merged.gtf > lncRNAs_location.gtf
+awk '$3=="transcript"' lncRNAs_location.gtf > lncRNAs_location_transcripts.gtf 
+
+#Create bed file 
+awk '$3=="transcript"{
+    match($0, /transcript_id "([^"]+)"/, a);
+    print $1"\t"($4-1)"\t"$5"\t"a[1]"\t.\t"$7
+}' lncRNAs_location_transcripts.gtf > lncRNAs.bed
+
+#location of UTR regions 
+grep -P "\tfive_prime_UTR\t|\tthree_prime_UTR\t" Lupinus_luteus.Genome.V2.gff3 > UTRs.gff3
+
+#create bed file
+awk 'BEGIN{OFS="\t"} $3=="five_prime_UTR" || $3=="three_prime_UTR"{
+print $1,$4-1,$5,$3,".",$7
+}' utrs.gff3 > utrs.bed
+
+#Bedtools is a powerful toolset for genome arithmetic.
+
+Version:   v2.31.1
+
+BASH: 
+bedtools intersect \
+-a lncRNAs.bed \
+-b UTRs.bed \
+-wa -wb > lncRNA_UTR_overlap.tsv
+
+nohup bash utr_bedtools.sh &
+
+
+bedtools coverage \
+-a lncRNAs.bed \
+-b UTRs.bed > lncRNA_UTR_coverage.tsv
+
+ awk '$10>=0.70' lncRNA_UTR_coverage.tsv > lncRNA_UTR_70.tsv  # for lncRNAs with a UTR coverage > 70%
+
+#Finally lncRNAs filtered by Rfam and UTR steps were excluded from candidate lncRNAs
 
  
