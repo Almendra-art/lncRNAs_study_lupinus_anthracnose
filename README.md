@@ -221,6 +221,9 @@ Build index:
 - edgeR v4.6.3 [10] 
 - DESeq2 v1.48.1 [11] 
 - WGCNA package v.1.73 [12]
+- LncTar v.1.0 [13]
+- RNAplex v2.7.2 [14]
+- psRNATarget (Zhao web server) [15]
 
 
 #### References 
@@ -237,7 +240,9 @@ Build index:
 10. Robinson MD, McCarthy DJ, Smyth GK. edgeR: A Bioconductor package for differential expression analysis of digital gene expression data. Bioinformatics. 2009;26:139–40. https://doi.org/10.1093/bioinformatics/btp616. 
 11.  Love MI, Huber W, Anders S. Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. Genome Biol. 2014;15(12):550. https://doi.org/10.1186/s13059-014-0550-8.
 12. Langfelder P, Horvath S. WGCNA: An R package for weighted correlation network analysis. BMC Bioinformatics. 2008;9. https://doi.org/10.1186/1471-2105-9-559. 
-
+13. Li J, Ma W, Zeng P, Wang J, Geng B, Yang J, et al. LncTar: A tool for predicting the RNA targets of long noncoding RNAs. Brief Bioinform. 2014;16:806–12. https://doi.org/10.1093/bib/bbu048.
+14. Tafer H, Hofacker IL. RNAplex: a fast tool for RNA–RNA interaction search. Bioinformatics. 2008;24:2657–63. https://doi.org/10.1093/bioinformatics/btn193.
+15. Dai X, Zhuang Z, Zhao PX. psRNATarget: a plant small RNA target analysis server (2017 release). Nucleic Acids Res. 2018;46:W49–54. https://doi.org/10.1093/nar/gky316. 
 
 
 ------------------------------------------------------------------------
