@@ -35,8 +35,7 @@ This repository contains the computational workflow and analysis scripts used to
     │   ├── run13_edges_attributes2_to_cytoscape.ipynb
     │   ├── run14_nodes_attributes_to_cytoscape.ipynb
     │   └── run15_annotation_nodes_of_interest.ipynb
-    ├── 06_regulatory_prediction/
-    │   ├── run16_regulatory_prediction.txt
+    ├── 06_regulatory_prediction.txt
     └── README.md
 
 **Note:** The modules must be executed in order.
