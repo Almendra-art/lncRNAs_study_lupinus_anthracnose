@@ -1,4 +1,4 @@
-### NOTE1: before running, the sequencing data must be downloaded
+### NOTE1: before running, the sequencing dataset must be downloaded
 ### NOTE2: input files and their paths needs previously listed (list_file.tsv) in two columns separate by a tab \t
 ### NOTE3: run this script in ubuntu terminal as: python3 run01_fastp_trimming.py list_file.tsv
 ### NOTE4: our dataset was sequenced with umis, subsequently, umis were removed in this step
