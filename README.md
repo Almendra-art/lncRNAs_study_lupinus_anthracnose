@@ -194,12 +194,13 @@ Build index:
 
 ------------------------------------------------------------------------
 
-### Step 06 - Regulation mechanisms prediction
+### Step 06 - Regulatiory prediction
 
 #### `run16_regulatory_prediction.txt`
 
 
 **Input:** - `lncRNA.fasta` - `protein-coding-genes.fasta` - `miRNAs.fasta` 
+
 **Output:** - `lncRNA results, RNAplex, psRNAtarget output`
 
 ------------------------------------------------------------------------
