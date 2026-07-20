@@ -201,7 +201,7 @@ Build index:
 
 **Input:** - `lncRNA.fasta` - `protein-coding-genes.fasta` - `miRNAs.fasta` 
 
-**Output:** - `lncRNA results, RNAplex, psRNAtarget output`
+**Output:** - `lncTar results, RNAplex, psRNAtarget output`
 
 ------------------------------------------------------------------------
 
