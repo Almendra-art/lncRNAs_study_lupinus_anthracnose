@@ -23,7 +23,7 @@ protein-coding genes by integrating:
     │   ├── run03_stringtie_assembly.sh
     │   └── run04_gffcompare.sh
     ├── 02_lncRNA_identification/
-    │   └── run05_FEELnc_CPC2_lncRNAprediction.txt
+    │   └── run05_lncRNAprediction.txt
     ├── 03_differential_expression_analysis/
     │   ├── run06_featurecounts.sh
     │   └── run07_EdgeR_DESEQ2_DEanalysis.ipynb
@@ -93,9 +93,9 @@ Build index:
 
 ### Step 02 - lncRNA Identification
 
-#### `run05_FEELnc_CPC2_lncRNAprediction.txt`
+#### `run05_lncRNAprediction.txt`
 
-**Input:** - `ref_genome.gtf` - `stringtie_merged.gtf`
+**Input:** - `ref_genome.gtf` - `stringtie_merged.gtf` - `reference_genome_with_UTR.gff`
 
 **Output:** - candidate lncRNAs
 
