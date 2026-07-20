@@ -1,1 +1,17 @@
 
+Regulatory interaction analyses were performed as described in the manuscript.
+
+Software:
+- RNAplex v2.7.2
+- LncTar v1.0
+- psRNATarget (Zhao Lab web server)
+
+Input files:
+- candidate_lncRNAs.fasta
+- protein-coding-genes.fasta
+- miRNAs.fasta
+
+Parameters:
+- RNAplex: default parameters
+- LncTar: ndG ≤ -0.1
+- psRNATarget: default parameters 
