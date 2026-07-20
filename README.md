@@ -110,13 +110,13 @@ Build index:
 
 ------------------------------------------------------------------------
 
-#### `run07_EdgeR_DESEQ2_DEanalysis.ipynb`
+#### `run07_contrast1_ctvshpi.ipynb`
 
 **Input:** - `count_matrix.tsv` - `metadata.txt`
 
 **Output:** - DE genes: infection-associated, PCA, heatmaps
 
-#### `run07_EdgeR_DESEQ2_DEanalysis.ipynb`
+#### `run07_contrast2_RvsS.ipynb`
 
 **Input:** - `count_matrix.tsv` - `metadata.txt`
 
