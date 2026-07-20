@@ -26,7 +26,8 @@ protein-coding genes by integrating:
     │   └── run05_lncRNAprediction.txt
     ├── 03_differential_expression_analysis/
     │   ├── run06_featurecounts.sh
-    │   └── run07_EdgeR_DESEQ2_DEanalysis.ipynb
+    │   └── run07_contrast1_ctvshpi.ipynb
+    │   └── run07_contrast2_RvsS.ipynb
     ├── 04_coexpression_WGCNA_analysis/
     │   └── run08_WGCNA_coexpanalysis.ipynb
     ├── 05_network_filtering/
@@ -115,8 +116,13 @@ Build index:
 
 **Input:** - `count_matrix.tsv` - `metadata.txt`
 
-**Output:** - DE genes, PCA, heatmaps
+**Output:** - DE genes: infection-associated, PCA, heatmaps
 
+#### `run07_EdgeR_DESEQ2_DEanalysis.ipynb`
+
+**Input:** - `count_matrix.tsv` - `metadata.txt`
+
+**Output:** - DE genes: genotype-associated, PCA, heatmaps
 ------------------------------------------------------------------------
 
 ### Step 04 - Co-expression Analysis
@@ -205,6 +211,7 @@ Build index:
 - edgeR v4.6.3 [10] 
 - DESeq2 v1.48.1 [11] 
 - WGCNA package v.1.73 [12]
+
 
 #### References 
 
