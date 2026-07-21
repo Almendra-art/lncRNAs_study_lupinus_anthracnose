@@ -20,7 +20,7 @@ This repository contains the computational workflow and analysis scripts used to
     │   ├── run03_stringtie_assembly.sh
     │   └── run04_gffcompare.sh
     ├── 02_lncRNA_identification/
-    │   └── run05_lncRNAprediction.txt
+    │   └── run05_lncRNAidentification.txt
     ├── 03_differential_expression_analysis/
     │   ├── run06_featurecounts.sh
     │   └── run07_contrast1_ctvshpi.ipynb
@@ -92,7 +92,7 @@ Build index:
 
 ### Step 02 - lncRNA Identification
 
-#### `run05_lncRNAprediction.txt`
+#### `run05_lncRNAidentification.txt`
 
 **Input:** - `ref_genome.gtf` - `stringtie_merged.gtf` - `reference_genome_with_UTR.gff`
 
@@ -224,7 +224,6 @@ Build index:
 - LncTar v.1.0 [13]
 - RNAplex v2.7.2 [14]
 - psRNATarget (Zhao web server) [15]
-
 
 #### References 
 
