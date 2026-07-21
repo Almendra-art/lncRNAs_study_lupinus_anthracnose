@@ -15,3 +15,22 @@ Parameters:
 - RNAplex: default parameters
 - LncTar: ndG ≤ -0.1
 - psRNATarget: default parameters 
+
+For RNAplex analyses between miRNAs (short sequence) and transcript sequences (long sequences): 
+
+RNAplex -q miRNA40.fa -t lnc25730.fa
+
+extract the interest region: 
+
+Program: samtools (Tools for alignments in the SAM format)
+Version: 1.10 (using htslib 1.10.2-3ubuntu0.1)
+
+Coordinates which aligns with miRNA +- 50 nt:
+
+ samtools faidx gen1.fasta Llu17446.1:1473-1592 > gen1_region.fa
+
+RNAplex:
+
+ RNAplex -q miRNA.fasta -t gen1_region.fa > RNAplex_output.txt
+
+
